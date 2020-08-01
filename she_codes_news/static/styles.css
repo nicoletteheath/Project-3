@@ -52,3 +52,12 @@ a {
 a, p {
     font-family: monospace;
 }
+
+form {
+    color: red;
+    background-color: salmon
+}
+
+.inputbox {
+    background-color: paleturquoise;
+}
