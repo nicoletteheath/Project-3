@@ -6,7 +6,7 @@ from .models import NewsStory
 class StoryForm(ModelForm):
     class Meta:
         model = NewsStory
-        fields = ['title', 'author', 'pub_date', 'content', 'image']
+        fields = ['title', 'pub_date', 'content', 'image']
         widgets = {
             'pub_date': forms.DateInput(
                 format=('%m/%d/%Y'),
@@ -18,12 +18,6 @@ class StoryForm(ModelForm):
                 }
             ),
             'title': forms.TextInput(
-                attrs={
-                    'class': 'form',
-                    'class': 'inputbox'
-                }
-            ),
-            'author': forms.TextInput(
                 attrs={
                     'class': 'form',
                     'class': 'inputbox'
