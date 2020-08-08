@@ -7,6 +7,15 @@
 
 {% block content %}
 
+{% if user.is_authenticated %}
+    <h2>Your Profile</h2>
+    <p>Username: {{ object.username }}</p>
+    <p>Email: {{ object.email }}</p>
+{% else %}
+    <p>You need to log in.</p>
+
+    {% endif %}
+
 {% if object %} 
     <h2>{{ object.get_full_name|default:object.username }}'s Stories</h2>
     {% for story in object.stories.all %}
