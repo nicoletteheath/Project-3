@@ -13,8 +13,10 @@
     <p>Username: {{ object.username }}</p>
     <p>Email: {{ object.email }}</p>
 {% else %}
-    <p>You need to log in.</p>
 
+    <h2>{{ object.username }} Profile </h2>
+
+    <p>Email: {{ object.email }}</p>
     {% endif %}
 
 {% if object %} 
