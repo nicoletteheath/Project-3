@@ -13,6 +13,6 @@ class CreateAccountView(CreateView):
 
 class AuthorView(generic.DetailView):
     model = CustomUser
-
+   
  
  

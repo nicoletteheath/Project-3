@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
 
 body {
-    background-color: rgb(240, 239, 239);
+    background-color: #ABD0CE;
 }
 
 header {
@@ -9,6 +9,7 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #000;
+    font-family: 'American Typewriter', serif;
 }
 
 img {
@@ -16,17 +17,18 @@ img {
 }
 
 h1 {
-    font-family: 'Montserrat Subrayada', sans-serif;
+    font-family: 'American Typewriter', serif;
     text-decoration: none;
     font-size: 4rem;
     margin: 0;
 }
 
 h2 {
-   font-family: 'Montserrat Subrayada', sans-serif; 
+   font-family: 'American Typewriter', serif; 
 }
 
 h3 {
+    font-family: 'American Typewriter', serif;
     font-size: 2rem;
     margin: 0;
 }
@@ -50,14 +52,14 @@ a {
 }
 
 a, p {
-    font-family: monospace;
+    font-family: 'American Typewriter', serif;
 }
 
 form {
-    color: red;
-    background-color: salmon
+    color: black;
+    background-color: #ABD0CE;
 }
 
 .inputbox {
-    background-color: paleturquoise;
+    background-color: #ABD0CE;
 }

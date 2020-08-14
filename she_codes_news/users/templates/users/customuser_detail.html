@@ -8,7 +8,8 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-    <h2>Your Profile</h2>
+    <h2>{{ object.username }} Profile </h2>
+
     <p>Username: {{ object.username }}</p>
     <p>Email: {{ object.email }}</p>
 {% else %}
@@ -29,6 +30,11 @@
                 <h4>{{ story.pub_date }}</h4>
             </div>
         </a>
+
+        {% if request.user.id == story.author.id %}
+        <a href="{% url 'news:editstory' story.id %}">Edit this Story</a>
+        <a href="{% url 'news:deletestory' story.id %}">Delete this Story</a>
+        {% endif %}
     </div>
     {% endfor %}
 {% else %}

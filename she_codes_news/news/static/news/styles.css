@@ -2,6 +2,7 @@
     margin: 2px;
     border: 1px solid #000;
     padding: 5px;
+    font-family: 'American Typewriter', serif;
 }
 
 .story-card img {
@@ -16,7 +17,8 @@
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1px 1px;
     grid-template-areas: "left-1 right-1" "left-1 right-2" "left-1 right-3";
-    max-height: 500px;
+    max-height: 800px;
+    font-family: 'American Typewriter', serif;
 }
 
 #story-card-1 {
@@ -39,7 +41,7 @@
 #story-card-3 a,
 #story-card-4 a {
     display: flex;
-    max-height: 120px;
+    max-height: 150px;
     width: 100%;
     height: 100%;
 }
@@ -47,13 +49,13 @@
 #story-card-2 .story-card-text h3,
 #story-card-3 .story-card-text h3,
 #story-card-4 .story-card-text h3 {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #story-card-2 .story-card-text h4,
 #story-card-3 .story-card-text h4,
 #story-card-4 .story-card-text h4 {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 #story-card-2 img,
@@ -68,6 +70,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-family: 'American Typewriter', serif;
 }
 
 #all-stories .story-card {
@@ -77,6 +80,7 @@
 
 #story-content {
     text-align: justify;
+    font-family: 'American Typewriter', serif;
 }
 
 #story-content img {
